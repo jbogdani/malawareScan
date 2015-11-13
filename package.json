@@ -2,8 +2,14 @@
   "name": "malawareScan",
   "version": "1.0.0",
   "description": "Scan local directory for malaware",
+  "keywords": "malawarer, scanner, websites",
+  "homepage": "https://github.com/jbogdani/malawareScan",
   "main": "scan.js",
-  "author": "Julian Bogdani, BraDypUS, info@bradypus.net",
+  "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/jbogdani/malawareScan.git"
+  },
+  "author": "Julian Bogdani, BraDypUS, <info@bradypus.net> (http://bradypus.net)",
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.1",
