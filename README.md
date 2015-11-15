@@ -1,18 +1,32 @@
 # malawareScan
-A simple node.js utility to recursively scan a local directory of web resources for malaware
+A simple node.js utility to recursively scan local or remote (FTP)
+directories of web resources malaware scripts
 
 ## Instructions (command line)
 1. Clone the repository from GitHub: `git clone git://github.com/jbogdani/malawareScan.git`
 1. Change directory `cd malawareScan`
 1. Install dependencies (only on first run) `npm install`
-1. Set up your configuration: `nano config.json`
-  * Enter your configuration
-  * Save changes and exit: `CTRL + X`, `YES`
+1. Edit the configuration file to match your needs
 1. Run everything: `node scan.js`
+1. Follow the instructions and choose the right option between
+local or remote (FTP) scan
+
+# Notice and Disclaimer
+**malawareScan** will **not** clean or change in any way your files.
+Before deleting / changing any of your files check yourself carefully your code.
+Some **false positive** results can be reported.
+
 
 ## The config file
-* path: sting, absolute path to the local directory to scan
-* excludes: array of lower-case extension to exclude from the scan
+* `path`: *sting*, absolute path to the local or remote (FTP server) directory to scan. Required for local scan, can be omitted (the default value`./` will be used)
+* `excludes`: *array*, list of lower-case extension to exclude from the scan
+* `host`: *string*, FTP host, required for remote scan
+* `user`: *string*, FTP username, required for remote scan
+* `pass`: *string*, FTP password, required for remote scan
+* `port`: *integer*, FTP port, optional, default value `21`
+
+## Issues
+Report any issue [here](https://github.com/jbogdani/malawareScan/issues).
 
 
 
