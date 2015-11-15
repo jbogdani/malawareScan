@@ -1,5 +1,9 @@
 {
-  "path": "/full/path/to/directory",
+  "path": "/path/to/local/or/remote/file",
+  "host": "ftp.host.com",
+  "user": "ftp-username",
+  "pass": "ftp-password",
+  "port": 21,
   "excludes": [
     "mbtiles",
     "epub",
